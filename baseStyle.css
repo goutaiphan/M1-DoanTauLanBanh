@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url('../font/PlayfairDisplay.ttf');
+}
+
+* {
+    position: relative;
+    box-sizing: content-box;
+    border: none;
+    outline: none;
+
+    font-family: 'Lora', serif;
+    text-align: center;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+*:not(input) {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    width: 420px;
+    margin: auto;
+    padding: 70px 0;
+}
+
+#title {
+    width: 95%;
+    min-width: max-content;
+    margin-bottom: 70px;
+    font-family: 'PlayfairDisplay', serif;
+    font-size: 35px;
+    transform: scale(1.05, 1);
+}
+
+#map {
+    width: 420px;
+    height: 420px;
+    border: 2px solid darkgray;
+    border-radius: 5px;
+}
